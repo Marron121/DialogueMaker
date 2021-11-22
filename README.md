@@ -9,6 +9,7 @@ In the version 1.0 (the one I'm releasing), with Dialogue Maker you can:
 * Define in each line who talks and the emotion of the line.
 * Check the current file you're writing.
 * Overwrite any line/question simply stating the number of the line/question you want to fix.
+
 For more information and an example, please check the following PDF.
 ## How are dialogues divided in classes
 * Each JSON file is composed of a single FullConversation, which contains a list of Conversations.
