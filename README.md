@@ -1,7 +1,7 @@
 # DialogueMaker
 A program to quickly write dialogues in a JSON format.
 ## What is Dialogue Maker?
-Dialogue Maker is a program I used to write the dialogues for the game I created alongside friends as a TFG (Spain's thesis for the degree). I upgraded the work I did there, cleaned it up a bit and decided to release it as open-source.
+Dialogue Maker is a program I used to write the dialogues for the game I created alongside friends as a TFG (Spain's thesis for the degree). I upgraded the work I did there, cleaned it up a bit and decided to release it as open-source, with the hopes it might be useful to anyone out there who needs it.
 ## What can Dialogue Maker do?
 In the version 1.0 (the one I'm releasing), with Dialogue Maker you can:
 * Automatically create JSON files with lines of dialogue and questions.
