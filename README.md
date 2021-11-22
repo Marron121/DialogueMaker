@@ -14,3 +14,29 @@ For more information and an example, please check the following PDF.
 ## How are dialogues divided in classes
 * Each JSON file is composed of a single FullConversation, which contains a list of Conversations.
 * Each Conversation is formed with a number, a list of DialogueLines and a list of Answers.
+```csharp
+    public class FullConversation
+    {
+        public List<Conversation> conversations;
+    }
+    
+    public class Conversation
+    {
+        public int version;
+        public List<DialogueLine> dialogue;
+        public List<Answer> answers;
+    }
+    
+    public class DialogueLine
+    {
+        public int number;
+        public string name;
+        public string line;
+        public string emotion;
+    }
+    
+    public class Answer
+    {
+        public int number;
+        public string line;
+    }
