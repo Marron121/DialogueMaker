@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// This script holds all the classes used in the program 'Dialogue Maker'.
 /// </summary>
-namespace DM.Classes
+namespace DM.JSON
 {
     [System.Serializable]
     public class DialogueLine

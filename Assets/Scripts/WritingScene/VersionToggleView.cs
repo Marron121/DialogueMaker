@@ -4,23 +4,26 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-
-public class VersionToggleView : MonoBehaviour
+namespace DM.Writing
 {
-    [Header("References")]
-    [SerializeField] private Toggle toggle;
-    [SerializeField] private TextMeshProUGUI versionText;
-    private int version;
-    private ToggleGroup toggleGroup;
-
-    public void Init(int v, ToggleGroup tg, UnityAction<int> callback)
+    public class VersionToggleView : MonoBehaviour
     {
-        version = v;
-        toggleGroup = tg;
-        versionText.text = version.ToString();
-        toggle.onValueChanged.AddListener((value) =>
+        [Header("References")]
+        [SerializeField] private Toggle toggle;
+        [SerializeField] private TextMeshProUGUI versionText;
+        private int version;
+        private ToggleGroup toggleGroup;
+
+        public void Init(int v, ToggleGroup tg, UnityAction<int> callback)
         {
-            if (value) callback.Invoke(version);
-        });
+            version = v;
+            toggleGroup = tg;
+            versionText.text = version.ToString();
+            toggle.onValueChanged.AddListener((value) =>
+            {
+                if (value) callback.Invoke(version);
+            });
+        }
     }
 }
+
